@@ -52,12 +52,12 @@
 </a>
             </div>
         </header>
-<!-- Dairy section - the ID attribute value here must match the corresponding href in navigation -->
-<!-- For example - this section with id="Dairy" must match the href="#Dairy" in the navigation -->
-<section id="Dairy">
-    <div class="accordion" id="groceryAccordion">
-        <div class="accordion-item">
-         <h2 class="accordion-header" id="headingDairy">
+<!-- Grocery Accordion -->
+<div class="accordion" id="groceryAccordion">
+
+<!-- Dairy section -->
+    <div class="accordion-item" id="Dairy">
+        <h2 class="accordion-header" id="headingDairy">
             <button class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
@@ -67,61 +67,66 @@
                 Dairy Products
             </button>
         </h2>
+
         <div id="collapseDairy"
             class="accordion-collapse collapse"
             aria-labelledby="headingDairy"
             data-bs-parent="#groceryAccordion">
-        <div class="accordion-body">
-            <ul>
-                <li>Milk</li>
-                <li>Cheese</li>
-                <li>Yogurt</li>
-                <li>Butter</li>
-                <li>Sour cream</li>
-                <li>Cream cheese</li>
-            </ul>
-        </div>
-        </div>
-        </div>
-    </div>
-</section>
-<!-- Fruits section-->
-<section id="Fruits">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFruits">
-                <button class="accordion-button collapsed">
-                    Fruits
-                </button>
-            </h2>
-            <div id="collapseFruits"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingFruits"
-                data-bs-parent="#groceryAccordion">
-                <p class="lead">Different fruits that can be good to have on your grocery list:</p>
-                    <ul>
-                        <li>Fruits
-                            <ul>
-                                <li>Apples</li>
-                                <li>Bananas</li>
-                                <li>Oranges</li>
-                                <li>Strawberries</li>
-                                <li>Blueberries</li>
-                                <li>Rasberries</li>
-                            </ul>
-                        </li>
-                    </ul>
+
+            <div class="accordion-body">
+                <p class="lead">Different dairy products that are a good staple for your grocery list:</p>
+
+                <ul>
+                    <li>Milk</li>
+                    <li>Cheese</li>
+                    <li>Yogurt</li>
+                    <li>Butter</li>
+                    <li>Sour cream</li>
+                    <li>Cream cheese</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
-<!-- Vegetables section-->
-<section id="Vegetables">
-    <div class="accordion" id="groceryAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingVegetables">
-                <button class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
+<!-- Fruits section -->
+<div class="accordion-item" id="Fruits">
+    <h2 class="accordion-header" id="headingFruits">
+        <button class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFruits"
+            aria-expanded="false"
+            aria-controls="collapseFruits">
+            Fruits
+        </button>
+    </h2>
+
+    <div id="collapseFruits"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingFruits"
+        data-bs-parent="#groceryAccordion">
+
+        <div class="accordion-body">
+            <p class="lead">Different fruits that can be good to have on your grocery list:</p>
+
+            <ul>
+                <li>Apples</li>
+                <li>Bananas</li>
+                <li>Oranges</li>
+                <li>Strawberries</li>
+                <li>Blueberries</li>
+                <li>Raspberries</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Vegetables section -->
+    <div class="accordion-item" id="Vegetables">
+        <h2 class="accordion-header" id="headingVegetables">
+            <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
                     data-bs-target="#collapseVegetables"
                     aria-expanded="false"
                     aria-controls="collapseVegetables">
@@ -132,6 +137,8 @@
                 class="accordion-collapse collapse"
                 aria-labelledby="headingVegetables"
                 data-bs-parent="#groceryAccordion">
+                
+                <div class="accordion-body">
                 <p class="lead">Different vegetables that can be good to have on your grocery list:</p>
                     <ul>
                         <li>Vegetables
@@ -152,13 +159,11 @@
     </div>
 </section>
 <!-- Meat section-->
-<section id="Meat">
-    <div class="accordion" id="groceryAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingMeat">
-                <button class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
+    <div class="accordion-item" id="Meat">
+        <h2 class="accordion-header" id="headingMeat">
+            <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
                     data-bs-target="#collapseMeat"
                     aria-expanded="false"
                     aria-controls="collapseMeat">
@@ -169,7 +174,9 @@
                 class="accordion-collapse collapse"
                 aria-labelledby="headingMeat"
                 data-bs-parent="#groceryAccordion"> 
-                <p class="lead">Different types of meat that can be good to have on hand.</p>
+                
+                <div class="accordion-body">
+                    <p class="lead">Different types of meat that can be good to have on hand.</p>
                     <ul>
                         <li>Meat
                             <ul>
@@ -210,13 +217,11 @@
     </div>
 </section>
 <!-- Grains section-->
-<section id="Grains">
-    <div class="accordion" id="groceryAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingGrains">
-                <button class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
+    <div class="accordion-item" id="Grains">
+        <h2 class="accordion-header" id="headingGrains">
+            <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
                     data-bs-target="#collapseGrains"
                     aria-expanded="false"
                     aria-controls="collapseGrains">
@@ -227,7 +232,9 @@
                 class="accordion-collapse collapse"
                 aria-labelledby="headingGrains"
                 data-bs-parent="#groceryAccordion">
-                <p class="lead">Different grains that can be good to have on your grocery list</p>
+                
+                <div class="accordion-body">
+                    <p class="lead">Different grains that can be good to have on your grocery list</p>
                     <ul>
                     <li>Grains
                         <ul>
@@ -239,13 +246,12 @@
                                 </ul>
                             </li>
                             <li>Quinoa</li>
-                       <li>Oats
-    <ul>
-        <li>Rolled oats</li>
-        <li>Steel-cut oats</li>
-        <li>Instant oats</li>>
-    </ul>
-</li>
+                        <li>Oats
+                            <ul>
+                                <li>Rollend oats</li>
+                                <li>Steel-cut oats</li>
+                                <li>Instant oats</li>
+                            </ul>
                         <li>Bread
                             <ul>
                                 <li>Whole wheat bread</li>
@@ -270,13 +276,11 @@
     </div>
 </section>
 <!-- Snacks section-->
-<section id="Snacks">
-    <div class="accordion" id="groceryAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSnacks">
-                <button class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
+    <div class="accordion-item" id="Snacks">
+        <h2 class="accordion-header" id="headingSnacks">
+            <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
                     data-bs-target="#collapseSnacks"
                     aria-expanded="false"
                     aria-controls="collapseSnacks">
@@ -287,7 +291,9 @@
                 class="accordion-collapse collapse"
                 aria-labelledby="headingSnacks"
                 data-bs-parent="#groceryAccordion"> 
-                <p class="lead">Different snacks to keep you going throughout the day</p>
+                
+                <div class="accordion-body">
+                    <p class="lead">Different snacks to keep you going throughout the day</p>
                     <ul>
                         <li>Snacks
                             <ul>
@@ -303,13 +309,11 @@
     </div>
 </section>
 <!-- Drinks section-->
-<section id="Drinks">
-    <div class="accordion" id="groceryAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingDrinks">
-                <button class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
+    <div class="accordion-item" id="Drinks">
+        <h2 class="accordion-header" id="headingDrinks">
+            <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
                     data-bs-target="#collapseDrinks"
                     aria-expanded="false"
                     aria-controls="collapseDrinks">
@@ -320,7 +324,10 @@
                 class="accordion-collapse collapse"
                 aria-labelledby="headingDrinks"
                 data-bs-parent="#groceryAccordion">
-                <p class="lead">Different drinks to keep you hydrated throughout the day</p>
+                
+                
+                <div class="accordion-body">
+                    <p class="lead">Different drinks to keep you hydrated throughout the day</p>
                     <ul>
                     <li>Drinks
                         <ul>
@@ -363,10 +370,8 @@
     </div>
 </section>
 <!-- Condiments section-->
-<section id="Condiments">
-    <div class="accordion" id="groceryAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingCondiments">
+    <div class="accordion-item" id="Condiments">
+         <h2 class="accordion-header" id="headingCondiments">
                 <button class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
@@ -380,7 +385,9 @@
                 class="accordion-collapse collapse"
                 aria-labelledby="headingCondiments"
                 data-bs-parent="#groceryAccordion">
-                <p class="lead">Different condiments to enhance your meals</p>
+                
+                <div class="accordion-body">
+                    <p class="lead">Different condiments to enhance your meals</p>
                     <ul>
                     <li>Condiments
                         <ul>
@@ -402,9 +409,7 @@
     </div>
 </section>
 <!-- frozen foods section-->
-<section id="Frozen-Foods">
-    <div class="accordion" id="groceryAccordion">
-        <div class="accordion-item">
+    <div class="accordion-item" id="FrozenFoods">
             <h2 class="accordion-header" id="headingFrozenFoods">
                 <button class="accordion-button collapsed"
                     type="button"
@@ -419,7 +424,9 @@
                 class="accordion-collapse collapse"
                 aria-labelledby="headingFrozenFoods"
                 data-bs-parent="#groceryAccordion">
-                <p class="lead">Different frozen foods to keep your freezer stocked and ready for meals</p>
+                
+                <div class="accordion-body">
+                    <p class="lead">Different frozen foods to keep your freezer stocked and ready for meals</p>
                     <ul>
                         <li>Frozen Foods
                             <ul>
@@ -462,9 +469,7 @@
     </div>
 </section>
 <!-- Seasonings section-->
-<section id="Seasonings">
-    <div class="accordion" id="groceryAccordion">
-        <div class="accordion-item">
+    <div class="accordion-item" id="Seasoning">
             <h2 class="accordion-header" id="headingSeasonings">
                 <button class="accordion-button collapsed"
                     type="button"
@@ -479,7 +484,9 @@
                 class="accordion-collapse collapse"
                 aria-labelledby="headingSeasonings"
                 data-bs-parent="#groceryAccordion">
-                <p class="lead">Different seasonings to enhance your meals</p>
+                
+                <div class="accordion-body">
+                    <p class="lead">Different seasonings to enhance your meals</p>
                     <ul>
                         <li>Seasonings
                             <ul>
