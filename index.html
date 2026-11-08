@@ -52,193 +52,346 @@
 </a>
             </div>
         </header>
-        <!-- Dairy section - the ID attribute value here must match the corresponding href in navigation -->
-        <!-- For example - this section with id="Dairy" must match the href="#Dairy" in the navigation -->
-        <section id="Dairy">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Dairy products</h2>
-                        <p class="lead">Different dairy products that are a good staple for your grocery list:</p>
-                        <ul>
-                            <li>Milk</li>
-                            <li>Cheese</li>
-                            <li>Yogurt</li>
-                            <li>Butter</li>
-                            <li>Sour cream</li>
-                            <li>Cream Cheese</li>
-                        </ul>
-                    </div>
+<!-- Dairy section - the ID attribute value here must match the corresponding href in navigation -->
+<!-- For example - this section with id="Dairy" must match the href="#Dairy" in the navigation -->
+<section id="Dairy">
+    <div class="accordion" id="groceryAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDairy">
+            <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseDairy"
+                aria-expanded="false"
+                aria-controls="collapseDairy">
+                <h2>Dairy products</h2>
+                <div id="collapseDairy"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingDairy"
+                    data-bs-parent="#groceryAccordion">
+                 <p class="lead">Different dairy products that are a good staple for your grocery list:</p>
+                 <div class="accordion" id="accordionDairy">  
+                    <ul>
+                        <li>Dairy
+                            <ul>
+                                <li>Milk</li>
+                                <li>Cheese</li>
+                                <li>Yogurt</li>
+                                <li>Butter</li>
+                                <li>Sour cream</li>
+                                <li>Cream Cheese</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
+             </div>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Fruits section-->
+<section id="Fruits">
+    <div class="accordion" id="groceryAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFruits">
+                <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFruits"
+                    aria-expanded="false"
+                    aria-controls="collapseFruits">
+                    <h2>Fruits</h2>
+                </button>
+            </h2>
+            <div id="collapseFruits"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFruits"
+                data-bs-parent="#groceryAccordion">
+                <p class="lead">Different fruits that can be good to have on your grocery list:</p>
+                    <ul>
+                        <li>Fruits
+                            <ul>
+                                <li>Apples</li>
+                                <li>Bananas</li>
+                                <li>Oranges</li>
+                                <li>Strawberries</li>
+                                <li>Blueberries</li>
+                                <li>Rasberries</li>
+                            </ul>
+                        </li>
+                    </ul>
             </div>
-        </section>
-        <!-- Fruits section-->
-       <section id="Fruits">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Fruits</h2>
-                        <p class="lead">Different fruits that can be good to have on your grocery list:</p>
+        </div>
+    </div>
+</section>
+<!-- Vegetables section-->
+<section id="Vegetables">
+    <div class="accordion" id="groceryAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingVegetables">
+                <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseVegetables"
+                    aria-expanded="false"
+                    aria-controls="collapseVegetables">
+                    <h2>Vegetables</h2>
+                </button>
+            </h2>
+            <div id="collapseVegetables"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingVegetables"
+                data-bs-parent="#groceryAccordion">
+                <p class="lead">Different vegetables that can be good to have on your grocery list:</p>
+                    <ul>
+                        <li>Vegetables
+                            <ul>
+                                <li>Carrots</li>
+                                <li>Broccoli</li>
+                                <li>Lettuce</li>
+                                <li>Potatoes</li>
+                                <li>Onions</li>
+                                <li>Bell Peppers</li>
+                                <li>Cucumbers</li>
+                                <li>Green beans</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Meat section-->
+<section id="Meat">
+    <div class="accordion" id="groceryAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingMeat">
+                <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseMeat"
+                    aria-expanded="false"
+                    aria-controls="collapseMeat">
+                    <h2>Meat</h2>
+                </button>
+            </h2>
+            <div id="collapseMeat"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingMeat"
+                data-bs-parent="#groceryAccordion"> 
+                <p class="lead">Different types of meat that can be good to have on hand.</p>
+                    <ul>
+                        <li>Meat
+                            <ul>
+                                <li>Chicken
+                                    <ul>
+                                        <li>Ground chicken</li>
+                                        <li>Chicken breasts</li>
+                                        <li>Chicken thighs</li>
+                                        <li>Chicken wings</li>
+                                    </ul>
+                                </li>
+                                <li>Beef
+                                    <ul>
+                                        <li>Ground beef</li>
+                                        <li>Steak</li>
+                                        <li>Beef roast</li>
+                                    </ul>
+                                </li>
+                                <li>Turkey
+                                    <ul>
+                                        <li>Ground turkey</li>
+                                        <li>Turkey breasts</li>
+                                        <li>Turkey thighs</li>
+                                    </ul>
+                                </li>
+                                <li>Pork
+                                    <ul>  
+                                        <li>Ground pork</li>
+                                        <li>Pork chops</li>
+                                        <li>Pork roasts</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Grains section-->
+<section id="Grains">
+    <div class="accordion" id="groceryAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingGrains">
+                <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseGrains"
+                    aria-expanded="false"
+                    aria-controls="collapseGrains">
+                    <h2>Grains</h2>
+                </button>
+            </h2>
+            <div id="collapseGrains"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingGrains"
+                data-bs-parent="#groceryAccordion">
+                <p class="lead">Different grains that can be good to have on your grocery list</p>
+                    <ul>
+                    <li>Grains
                         <ul>
-                            <li>Apples</li>
-                            <li>bananas</li>
-                            <li>organes</li>
-                            <li>Strawberries</li>
-                            <li>Blueberries</li>
-                            <li>Rasberries</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Vegetables section-->
-      <section id="Vegetables">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Vegetables</h2>
-                        <p class="lead">Different vegetables that can be good to have on your grocery list:</p>
-                        <ul>
-                            <li>Carrots</li>
-                            <li>Broccoli</li>
-                            <li>Lettuce</li>
-                            <li>Potatoes</li>
-                            <li>Onions</li>
-                            <li>Bell Peppers</li>
-                            <li>cucumbers</li>
-                            <li>Green beans</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-          <!-- Meat section-->
-     <section id="Meat">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                       <h2>Meat</h2>
-
-<p class="lead">
-    Different types of meat that can be good to have on hand.
-</p>
-
-<ul>
-    <li>Chicken
-        <ul>
-            <li>Ground chicken</li>
-            <li>Chicken breasts</li>
-            <li>Chicken thighs</li>
-            <li>Chicken wings</li>
-        </ul>
-    </li>
-    <li>Beef
-        <ul>
-            <li>Ground beef</li>
-            <li>Beef steaks</li>
-            <li>Beef roasts</li>
-        </ul>
-    </li>
-    <li>Turkey</li>
-        <Ul>
-            <li>Ground turkey</li>
-            <li>Turkey breasts</li>
-            <li>Turkey thighs</li>
-        </Ul>
-    <li>Pork</li>
-        <Ul>
-            <li>Ground pork</li>
-            <li>Pork chops</li>
-            <li>Pork roasts</li>
-        </Ul>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
- <!-- Grains section-->
-      <section id="Grains">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Grains</h2>
-                        <p class="lead">Different grains that can be good to have on your grocery list</p>
-                        <ul>
-                            <li>Rice</li>
+                            <li>Rice
                                 <ul>
                                     <li>White rice</li>
                                     <li>Brown rice</li>
                                     <li>Wild rice</li>
                                 </ul>
+                            </li>
                             <li>Quinoa</li>
-                            <li>Oats</li>
-                                <ul>
-                                    <li>Rolled oats</li>
-                                    <li>Steel-cut oats</li>
-                                    <li>Instant oats</li>
-                                </ul>
-                            <li>Bread</li>
-                                <ul>
-                                    <li>Whole wheat bread</li>
-                                    <li>White bread</li>
-                                    <li>Sourdough bread</li>
-                                </ul>
-                            <li>Pasta</li>
-                                <ul>
-                                    <li>Spaghetti</li>
-                                    <li>Fettuccine</li>
-                                    <li>Penne</li>
-                                    <li>Ravioli</li>
-                                    <li>Lasagna noodles</li>
-                                    <li>Macaroni</li>
-                                    <li>Angel hair pasta</li>
-                                </ul>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-         <!-- Snacks section-->
-      <section id="Snacks">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Snacks</h2>
-                        <p class="lead">Different snacks to keep you going throughout the day</p>
+                        <li>Oats
+                            <ul>
+                                <li>Rollend oats</li>
+                                <li>Steel-cut oats</li>
+                                <li>Instant oats</li>
+                            </ul>
+                        <li>Bread
+                            <ul>
+                                <li>Whole wheat bread</li>
+                                <li>White bread</li>
+                                <li>Sourdough bread</li>
+                            </ul>
+                        </li>
+                        <li>Pasta</li>
                         <ul>
-                            <li>Chips</li>
-                            <li>Crackers</li>
-                            <li>Granola bars</li>
-                            <li>Sweet treats</li>
+                            <li>Spaghetti</li>
+                            <li>Fettuccine</li>
+                            <li>Penne</li>
+                            <li>Ravioli</li>
+                            <li>Lasagna noodles</li>
+                            <li>Macaroni</li>
+                            <li>Angel hair pasta</li>
                         </ul>
-                    </div>
-                </div>
+                    </li>
+                    </ul>
             </div>
-        </section>
-        <!-- Drinks section-->
-      <section id="Drinks">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Drinks</h2>
-                        <p class="lead">Different drinks to keep you hydrated throughout the day</p>
+        </div>
+    </div>
+</section>
+<!-- Snacks section-->
+<section id="Snacks">
+    <div class="accordion" id="groceryAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSnacks">
+                <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSnacks"
+                    aria-expanded="false"
+                    aria-controls="collapseSnacks">
+                    <h2>Snacks</h2>
+                </button>
+            </h2>
+            <div id="collapseSnacks"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSnacks"
+                data-bs-parent="#groceryAccordion"> 
+                <p class="lead">Different snacks to keep you going throughout the day</p>
+                    <ul>
+                        <li>Snacks
+                            <ul>
+                                <li>Chips</li>
+                                <li>Crackers</li>
+                                <li>Granola bars</li>
+                                <li>Sweet treats</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Drinks section-->
+<section id="Drinks">
+    <div class="accordion" id="groceryAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingDrinks">
+                <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseDrinks"
+                    aria-expanded="false"
+                    aria-controls="collapseDrinks">
+                    <h2>Drinks</h2>
+                </button>
+            </h2>
+            <div id="collapseDrinks"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingDrinks"
+                data-bs-parent="#groceryAccordion">
+                <p class="lead">Different drinks to keep you hydrated throughout the day</p>
+                    <ul>
+                    <li>Drinks
                         <ul>
                             <li>Water</li>
-                            <li> Juice</li>
-                            <li>Soda</li>
+                            <li> Juice
+                                <ul>
+                                    <li>Orange juice</li>
+                                    <li>Apple juice</li>
+                                    <li>Grape juice</li>
+                                    <li>Cranberry juice</li>
+                                </ul>
+                            <li>Soda
+                                <ul> 
+                                    <li>Coca-Cola</li>
+                                    <li>Pepsi</li>
+                                    <li>Sprite</li>
+                                    <li>Mountain Dew</li>
+                                    <li>Dr. Pepper</li>
+                                    <li>Fanta</li>
+                                </ul>
+                            </li>
                             <li> Coffee</li>
-                        </ul>
-                    </div>
-                </div>
+                                <ul>
+                                    <li>Espresso</li>
+                                    <li>Latte</li>
+                                    <li>Cappuccino</li>
+                                    <li>Americano</li>
+                                </ul>
+                            </li>
+                            <li>Tea</li>
+                                <ul>
+                                    <li>Green tea</li>
+                                    <li>Black tea</li>
+                                    <li>Herbal tea</li>
+                                </ul>
+                    </li>
+                    </ul>
             </div>
-        </section>
-          <!-- Condiments section-->
-      <section id="Condiments">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Condiments</h2>
-                        <p class="lead">Different condiments to enhance your meals</p>
+        </div>
+    </div>
+</section>
+<!-- Condiments section-->
+<section id="Condiments">
+    <div class="accordion" id="groceryAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCondiments">
+                <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseCondiments"
+                    aria-expanded="false"
+                    aria-controls="collapseCondiments">
+                    <h2>Condiments</h2>
+                </button>
+            </h2>
+            <div id="collapseCondiments"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingCondiments"
+                data-bs-parent="#groceryAccordion">
+                <p class="lead">Different condiments to enhance your meals</p>
+                    <ul>
+                    <li>Condiments
                         <ul>
                             <li>Ketchup</li>
                             <li>Mustard</li>
@@ -251,63 +404,125 @@
                             <li>Vinegar</li>
                             <li>Honey mustard</li>
                         </ul>
-                    </div>
-                </div>
+                    </li>
+                    </ul>
             </div>
-        </section>
-          <!-- frozen foods section-->
-    <section id="Frozen-Foods">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Frozen Foods</h2>
-                        <p class="lead">Different frozen foods to keep your freezer stocked and ready for meals</p>
-                        <ul>
-                            <li>Ice cream</li>
-                            <li>Frozen vegetables</li>
-                            <li>Frozen fruits</li>
-                            <li>Frozen meals</li>
-                        </ul>
-                    </div>
-                </div>
+        </div>
+    </div>
+</section>
+<!-- frozen foods section-->
+<section id="Frozen-Foods">
+    <div class="accordion" id="groceryAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFrozenFoods">
+                <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFrozenFoods"
+                    aria-expanded="false"
+                    aria-controls="collapseFrozenFoods">
+                    <h2>Frozen Foods</h2>
+                </button>
+            </h2>
+            <div id="collapseFrozenFoods"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFrozenFoods"
+                data-bs-parent="#groceryAccordion">
+                <p class="lead">Different frozen foods to keep your freezer stocked and ready for meals</p>
+                    <ul>
+                        <li>Frozen Foods
+                            <ul>
+                                <li>Ice cream
+                                    <ul>
+                                        <li>Vanilla ice cream</li>
+                                        <li>Chocolate ice cream</li>
+                                        <li>Strawberry ice cream</li>
+                                        <li>Mint chocolate chip ice cream</li>
+                                    </ul>
+                                </li>
+                                <li>Frozen vegetables
+                                    <ul>
+                                        <li>Frozen peas</li>
+                                        <li>Frozen corn</li>
+                                        <li>Frozen spinach</li>
+                                        <li>Frozen broccoli</li>
+                                    </ul>
+                                </li>
+                                <li>Frozen fruits
+                                    <ul>
+                                        <li>Frozen berries</li>
+                                        <li>Frozen mango</li>
+                                        <li>Frozen pineapple</li>
+                                    </ul>
+                                </li>
+                                <li>Frozen meals
+                                    <ul>
+                                        <li>Frozen pizza</li>
+                                        <li>Frozen lasagna</li>
+                                        <li>Frozen chicken nuggets</li>
+                                        <li>Frozen fish sticks</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
             </div>
-        </section>
-          <!-- Seasonings section-->
-      <section id="Seasonings">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Seasonings</h2>
-                        <p class="lead">Different seasonings to enhance your meals</p>
-                        <ul>
-                            <li>Garlic powder</li>
-                            <li>Onion powder</li>
-                            <li> Paprika</li>
-                            <li> Cumin</li>
-                            <li> Basil</li>
-                            <li> Oregano</li>
-                            <li> Thyme</li>
-                            <li> Rosemary</li>
-                            <li> Salt</li>
-                            <li> Pepper</li>
-                            <li> Chili powder</li>
-                            <li> Black pepper</li>
-                            <li> Red pepper flakes</li>
-                        </ul>
-                    </div>
-                </div>
+        </div>
+    </div>
+</section>
+<!-- Seasonings section-->
+<section id="Seasonings">
+    <div class="accordion" id="groceryAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeasonings">
+                <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeasonings"
+                    aria-expanded="false"
+                    aria-controls="collapseSeasonings">
+                    <h2>Seasonings</h2>
+                </button>
+            </h2>
+            <div id="collapseSeasonings"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSeasonings"
+                data-bs-parent="#groceryAccordion">
+                <p class="lead">Different seasonings to enhance your meals</p>
+                    <ul>
+                        <li>Seasonings
+                            <ul>
+                                <li>Garlic powder</li>
+                                <li>Onion powder</li>
+                                <li>Paprika</li>
+                                <li>Cumin</li>
+                                <li>Basil</li>
+                                <li>Oregano</li>
+                                <li>Thyme</li>
+                                <li> Rosemary</li>
+                                <li> Salt</li>
+                                <li> Pepper</li>
+                                <li> Chili powder</li>
+                                <li> Black pepper</li>
+                                <li> Red pepper flakes</li>
+                            </ul>
+                        </li>
+                    </ul>
             </div>
-        </section>
-        <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <!-- END LOADING BOOTSTRAP JAVASCRIPT -->
-        <!-- JAVASCRIPT THAT MAKES THE SCROLLING MAGIC HAPPEN - DO NOT DELETE -->
-        <script src="js/scripts.js"></script>
-        <!-- END LOADING JAVASCRIPT -->
+        </div>
+    </div>
+</section>
+<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+<!-- JAVASCRIPT THAT MAKES THE SCROLLING MAGIC HAPPEN - DO NOT DELETE -->
+<script src="js/scripts.js"></script>
+<!-- END LOADING JAVASCRIPT -->
+
+<!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; 2026 My Grocery List
+        </p></div>
+    </footer>
     </body>
-    <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; 2026 My Grocery List
-            </p></div>
-        </footer>
 </html>
